@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday My Love</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+            color: white;
+            padding: 50px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        button {
+            background-color: white;
+            color: #ff9a9e;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+        .hidden { display: none; }
+    </style>
+</head>
+<body>
+    <div class="container" id="page1">
+        <h1>Happiest birthday to my laadoooo💋 🎉</h1>
+        <p>You coming into my life was the bestest thing that ever happened to me Happiest birthday to my laadooo🫂Happiest birthday to My bebbbyyyy💗
+</p>
+        <button onclick="showPage('page2')">Next</button>
+    </div>
+
+    <div class="container hidden" id="page2">
+        <h1>Our Beautiful Memories 📸</h1>
+        <div class="gallery">
+            <img src="img1.jpg" alt="Memory 1" width="200">
+            <img src="img2.jpg" alt="Memory 2" width="200">
+            <img src="img3.jpg" alt="Memory 2" width="200">
+        </div>
+        <button onclick="showPage('page3')">Next</button>
+    </div>
+
+    <div class="container hidden" id="page3">
+        <h1>My Love Letter to You 💌</h1>
+        <p>💗Happiest birthday to my laadoooo💋my favorite person my better half my whole world You coming into my life was the bestest thing that ever happened to me Happiest birthday to my laadooo🫂Happiest birthday to My bebbbyyyy💗My laadoooo the only person i can rely upon anytime the reason of my happiness 
+            My love You are my home😘 I love you forever 💓 As the days went by I could feel myself slowly falling in love with you I think about you all the time from the moment💞 I wake up to the moment I fall asleep When I think about you😙I realize that you are the one that holds the key to my heart💗 I know for a fact we are meant for each other Wish i could go back to the day i meet you🫂 and tell myself she really is the one for you never let this one go and that's what i am gonna do never gonna let you go u light up my world like nobody else U don't know but u are the prettiest girl 💋I know So beautiful just by taking to you my day gets better I love you this much💝 because Seeing your smile literally changes my whole day😘 Just know I will never let go of you and my feelings will never disappear I wish I was able to explain how wonderful you are to me🤗 how can just look at you and never get tired of your beauty how the sounds of your voice gives me butterflies😚 How hearing your laugh makes me smile😄 I wish I could also tell you how much I love you😚 but you have me loss of words And even if I could put the words together to tell you these things it wouldn't come anywhere near to show you how much you mean to me i may not be the most perfect guy or the most amazing but i'll put my all into our relationship i'll treat you like a queen💟 i will give reassurance💓 loyalty💞  love 💋 care and affection💖 and i'll try to make you feel like you found home and i really want to do my best for you Have the most bestest birthday my love You always  have a special place in my house of memories😘 I will never leave you or let you leave me ik this sounds filmy but i would fight the world for you to be with you sometimes i just look and i feel i won the best girl in the world ur hand fits perfectly with mine ur the most precious most cutest most beautiful person in my eyes🫂I love you so much laadooo💋 there is so much i wanna say but words really can't describe my feelings for you Have a good day  and the bestest year and most bestest life ahead I am here with you always and forever🫂 i am here with you through ur hardest times cause you changed someone like me someone who was dead inside u i really want to do my best for youu !! That's my promise to you!! I love youuu💋💌💘💝💖💗💓💞💕💟❣❤‍🔥❤‍🩹❤🧡💛💚💙💜🤎🤍
+            Ik it's a little bit cringe😅.
+</p>
+        <button onclick="showPage('page4')">Next</button>
+    </div>
+
+    <div class="container hidden" id="page4">
+        <h1>A Song for You 🎶</h1>
+        <p>This song reminds me of you every time I hear it...</p>
+        <audio controls>
+            <source src="aud.mp3" type="audio/mpeg">
+        </audio>
+        <button onclick="showPage('page5')">Next</button>
+    </div>
+
+    <div class="container hidden" id="page5">
+        <h1>Make a Wish! 🌟</h1>
+        <p>Your special surprise is waiting for you...</p>
+        <button onclick="alert('Your gift is waiting!')">soon........</button>
+    </div>
+
+    <script>
+        function showPage(pageId) {
+            document.querySelectorAll('.container').forEach(page => page.classList.add('hidden'));
+            document.getElementById(pageId).classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
